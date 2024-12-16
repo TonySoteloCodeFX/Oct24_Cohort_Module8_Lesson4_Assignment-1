@@ -1,0 +1,29 @@
+/* FONTS  */
+/* font-family: "Protest Revolution", sans-serif;
+font-family: "Roboto", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top_nav, .bottom_nav {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    height: auto;
+    font-family: "Roboto", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.top_nav a, .bottom_nav a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+main {
+    background-image: url(/art/bg_1.png);
+    background-size: cover;
+}
