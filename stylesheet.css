@@ -32,6 +32,12 @@ body {
     text-decoration: none;
     margin: 10px;
     color: #F3FBE5;
+    transition-duration: 0.3s;
+}
+
+.top_nav a:hover, .bottom_nav a:hover {
+    scale: 1.1;
+    color: #611300;
 }
 
 main {
@@ -52,9 +58,31 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    border: 5px solid #e2dbda;
     background-color: rgba(199, 41, 2, 0.8);
     border-radius: 20px;
     box-shadow: 2px 3px 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    border-color: #ff5733; 
+    box-shadow: 4px 6px 15px rgba(255, 87, 51, 0.8); 
+}
+
+span{
+    width: 100px;
+    height: 100px;
+    background-image: url(/art/skull.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
+    transition: transform 0.5s ease;
+}
+
+form:hover span {
+    transform: rotate(360deg);
 }
 
 label { 
@@ -66,7 +94,7 @@ label {
 }
 
 input {
-    color: #F3FBE5;
+    color: #ff5733;
     text-align: center;
     width: 150px;
     height: 30px;
@@ -90,4 +118,15 @@ button {
     background-color: transparent;
     color: #F3FBE5;
     box-shadow: inset 1px 4px 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    border-color: #ff5733; 
+    box-shadow: 4px 6px 15px rgba(255, 87, 51, 0.8); 
+}
+
+.button:active {
+    color: #C72A01;
+    background-color: white;
 }
